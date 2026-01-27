@@ -1,0 +1,24 @@
+{
+  "name": "callbacks-typrescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saxenapriti1008-stack/Callbacks-Typrescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saxenapriti1008-stack/Callbacks-Typrescript/issues"
+  },
+  "homepage": "https://github.com/saxenapriti1008-stack/Callbacks-Typrescript#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
