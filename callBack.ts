@@ -2,7 +2,8 @@
 /*1) Hello Callback:- 
 //Write a function that takes a callback and calls it with 'Hello from callback!'. 
 
-const sayHello = (displayMessage : any)  => {
+type displayhelloFunction = (message: string) => void
+const sayHello = (displayMessage : displayhelloFunction)  => {
   const message = "Hello from callback!";
   displayMessage(message);
 
@@ -19,7 +20,8 @@ sayHello(displayMessage);*/
 /*2) Delayed Greeting 
 //Make a function called sayHelloLater that waits 2 seconds, then calls a callback with 'Hi, I am late!'. 
 
-const sayHelloLater = (displayMessage :any) => {
+type displayhellolaterFunction = (message: string) => void
+const sayHelloLater = (displayMessage : displayhellolaterFunction) => {
   setTimeout(() => {
     const message = "Hi, I am late!";
     displayMessage(message);
@@ -51,7 +53,7 @@ addNumbers(5, 3, displayResult);*/
 /*4) Uppercase Callback 
 //Write a function that takes a string and a callback. The callback should return the string in uppercase. 
 
-const convertToUpperCase = (text : any, displayText : any) => {
+const convertToUpperCase = (text : string, displayText : any) => {
   const result = text.toUpperCase();
   displayText(result);
 };
@@ -62,8 +64,9 @@ const displayText = (text : any) => {
 
 convertToUpperCase("hello", displayText);*/
 
-/*5) Pizza Order 
+//5) Pizza Order 
 //Simulate ordering pizza. The function should wait 3 seconds and then call the callback with 'Your pizza is ready!'.
+
 
 const orderPizza = (displayStatus : any) => {
   console.log("Order placed...");
@@ -78,7 +81,7 @@ const displayStatus = (status : any) => {
   console.log(status);
 };
 
-orderPizza(displayStatus);*/
+orderPizza(displayStatus);
 
 /*6) Multiple Messages 
 //Make a function that takes a callback and calls it three times with different messages. 
