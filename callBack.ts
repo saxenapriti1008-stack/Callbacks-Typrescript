@@ -1,5 +1,5 @@
 
-/*1) Hello Callback:- 
+//1) Hello Callback:- 
 //Write a function that takes a callback and calls it with 'Hello from callback!'. 
 
 type displayhelloFunction = (message: string) => void
@@ -13,7 +13,7 @@ const displayMessage = (message : string) => {
   console.log(message);
 };
 
-sayHello(displayMessage);*/
+sayHello(displayMessage);
 
 
 
